@@ -1,0 +1,38 @@
+ primeito cria o repositorio git 
+ add rename 
+ gitgnore visualstudio 
+ depois clona na maquina
+ depois adiciona todos os arquivos num comit e comita
+ depois git psh
+
+ cria a api
+
+//// > dotnet new sln -output Todo
+///// didec in Revisão 
+/////> cd.\Todo\ didec in Todo 
+/////> dotnet new web-name API]
+///// didec in Todo 
+/////> dotnet sln add API O projeto 'API\API.csproj' foi adicionado à solução. didec in Todo 
+/////> code
+depois roda o projeto 
+////didec in Todo 
+////> dotnet run project API
+////depois coloca a porta no arquivo de teste teste.http
+////criar a pasta models depois criar a classe 
+////depois instalar os pacotes na pasta do projeto dotnet didec in API > 
+////Pesquisar Q dotnet add package Microsoft. EntityFramework Core.Sqlite
+////criar a classe appDataContext.cs
+
+using Microsoft. EntityFramework Core;
+  
+  namespace API. Models; 
+  public class AppDataContext: DbContext 
+  {
+  public DbSet<Tarefa> Tarefas { get; set; } 
+  protected override void OnConfiguring (DbContextOptionsBuilder optionsBuilder) {
+  optionsBuilder.UseSqlite("Data Source=app.db");
+    }
+    }
+////depois cria o banco de dados  C# - Conexão da Aplicação com Banco de Dados
+////
+////
